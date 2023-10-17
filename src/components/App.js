@@ -4,15 +4,13 @@ import { lazy } from 'react';
 import { Layout } from './Layout/Layout';
 
 import { ToastContainer } from 'react-toastify';
-import Footer from './Footer/Footer';
-import Reviews from './Reviews/Reviews';
+
+import { Reviews } from './Reviews/Reviews';
 
 const Home = lazy(() => import('../pages/Home/Home'));
 const Movies = lazy(() => import('../pages/Movies/Movies'));
-const MoviesDetails = lazy(() =>
-  import('../pages/MoviesDetails/MoviesDetails')
-);
-const Cast = lazy(() => import('./components/Cast'));
+const MoviesDetails = lazy(() => import('../pages/MoviesDetails/MoviesDetails'));
+const Cast = lazy(() => import('./Cast/Cast'));
 // const Reviews = lazy(() => import('./components/Reviews'));
 
 export const App = () => {
@@ -28,6 +26,7 @@ export const App = () => {
         </Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      <ToastContainer />
     </div>
   );
 };

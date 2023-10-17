@@ -1,34 +1,18 @@
-import { useTheme } from '@emotion/react';
-
-import { Container } from 'components/App/App.styled';
+import { Suspense } from 'react';
 
 import { Outlet } from 'react-router-dom';
 
-import { routes } from 'routes';
-import {
-  LayoutWrapper,
-  LinkWrapper,
-  NavBar,
-  NavLinkStyled,
-} from './Header.styled';
+import { Header } from 'components/Header/Header';
+
+import { Loader } from 'components/Loader/Loader';
 
 export const Layout = () => {
-  const theme = useTheme();
-
   return (
     <>
-      <NavBar>
-        <Container>
-          <LayoutWrapper>
-            <LinkWrapper>
-              <NavLinkStyled to={routes.HOME}>Home</NavLinkStyled>
-              <NavLinkStyled to={routes.COUNTRY}>Countries</NavLinkStyled>
-            </LinkWrapper>
-          </LayoutWrapper>
-        </Container>
-      </NavBar>
-
-      <Outlet />
+      <Header />
+      <Suspense fallback={<Loader />}>
+        <Outlet />
+      </Suspense>
     </>
   );
 };
