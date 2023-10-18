@@ -19,8 +19,7 @@
 //   );
 // };
 
-import { Header1 } from './Header.styled';
-import { Link } from 'react-router-dom';
+import { Header1, NavLinkStyled } from './Header.styled';
 
 const navItems = [
   { to: '/', text: 'Home' },
@@ -32,9 +31,9 @@ export const Header = () => {
     <Header1>
       <nav>
         {navItems.map((item, index) => (
-          <Link key={index} to={item.to}>
+          <NavLinkStyled key={index} to={item.to}>
             {item.text}
-          </Link>
+          </NavLinkStyled>
         ))}
       </nav>
     </Header1>

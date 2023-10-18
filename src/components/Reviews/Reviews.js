@@ -8,7 +8,7 @@ import { FaUserCircle } from 'react-icons/fa';
 
 import { ErrorText, ReviewWrap, UserName } from './Reviews.styled';
 
-import { ReadMore } from '../ReadMore/ReadMore';
+import { ReadMore } from 'components/ReadMore/ReadMore';
 
 export const Reviews = () => {
   const { movieId } = useParams();
@@ -53,4 +53,4 @@ export const Reviews = () => {
   );
 };
 
-export default Reviews;
+

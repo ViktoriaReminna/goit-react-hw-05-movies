@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Header1 = styled.header`
@@ -15,7 +15,7 @@ export const Header1 = styled.header`
   }
 `;
 
-export const NavLinkStyled = styled(NavLink)`
+export const NavLinkStyled = styled(Link)`
   padding: 8px 16px;
   border-radius: 4px;
   text-decoration: none;

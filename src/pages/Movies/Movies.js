@@ -8,7 +8,7 @@ import { getMoviesByName } from '../../service/movies-service';
 
 import { MainStyles } from '../Movies/Movies.styled';
 
-import { SearchBar } from '../../components/SearchBar/SearchBar';
+import { SearchBar } from 'components/SearchBar/SearchBar';
 
 import { MoviesList } from 'components/MovieList/MovieList';
 
@@ -47,7 +47,7 @@ const Movies = () => {
   return (
     <MainStyles>
       <SearchBar onSubmit={getQuery} />
-      {movies && <MoviesList movies={movies} />}
+      {movies && <MoviesList moviesData={movies} />}
     </MainStyles>
   );
 };
