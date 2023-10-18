@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { ReadOrHide, Text } from './ReadMore.styled';
+import { ReadOrHide, Text } from '../ReadMore/ReadMore.styled';
 
 export const ReadMore = ({ children }) => {
   const text = children;
