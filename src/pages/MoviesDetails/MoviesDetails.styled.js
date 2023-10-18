@@ -52,18 +52,22 @@ export const Image = styled.img`
 export const Overview = styled.p`
   max-width: 700px;
   margin-bottom: 20px;
+  font-size: 16px;
 `;
 
 export const Title = styled.h2`
   margin-bottom: 20px;
+  font-size: 22px;
 `;
 
 export const InfoTitle = styled.h3`
   margin-bottom: 20px;
+  font-size: 20px;
 `;
 
 export const Text = styled.p`
   margin-bottom: 20px;
+  font-size: 16px;
 `;
 
 export const Wrap = styled.div`

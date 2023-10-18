@@ -9,8 +9,8 @@ export const Input = styled.input`
   background-color: inherit;
   outline: none;
   color: #ffffffa2;
-  font-size: 16px;
-  height: 40px;
+  font-size: 20px;
+  height: 60px;
   transition: box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
@@ -26,8 +26,8 @@ export const SearchBtn = styled.button`
   background-color: inherit;
   border-radius: 4px;
   border: solid 1px #00ced1;
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
 `;
 
 export const Form = styled.form`
