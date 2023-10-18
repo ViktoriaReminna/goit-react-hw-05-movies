@@ -1,6 +1,6 @@
 import { MoviesListStyles } from '../MovieList/MovieList.styled';
 
-import { MovieCard } from '//MovieCard/MovieCard';
+import { MovieCard } from '../MovieCard/MovieCard';
 
 export const MoviesList = ({ moviesData }) => {
   return (

@@ -5,7 +5,7 @@ export const Text = styled.p`
   width: 100%;
 `;
 
-export const ReadorHide = styled.span`
+export const ReadOrHide = styled.span`
   color: #1e1e1e;
   cursor: pointer;
 `;

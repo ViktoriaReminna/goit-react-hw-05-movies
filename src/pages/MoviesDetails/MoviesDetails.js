@@ -1,8 +1,13 @@
 import { Suspense, useEffect, useState } from 'react';
+
 import { BsArrowLeft } from 'react-icons/bs';
+
 import { Link, Outlet, useLocation, useParams } from 'react-router-dom';
+
 import noPhoto from 'image/noImage.png';
+
 import { getMovieById } from '../../service/movies-service';
+
 import {
   Image,
   InfoWrap,
@@ -23,7 +28,7 @@ const MoviesDetails = () => {
   const location = useLocation();
   const [genres, setGenres] = useState([]);
 
-  // const oldPath = useRef(location.state?.from || '/');
+ 
 
   useEffect(() => {
     if (!movieId) {

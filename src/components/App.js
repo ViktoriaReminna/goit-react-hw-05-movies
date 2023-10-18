@@ -1,4 +1,5 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
+
 import { lazy } from 'react';
 
 import { Layout } from './Layout/Layout';
@@ -9,9 +10,10 @@ import { Reviews } from './Reviews/Reviews';
 
 const Home = lazy(() => import('../pages/Home/Home'));
 const Movies = lazy(() => import('../pages/Movies/Movies'));
-const MoviesDetails = lazy(() => import('../pages/MoviesDetails/MoviesDetails'));
+const MoviesDetails = lazy(() =>
+  import('../pages/MoviesDetails/MoviesDetails')
+);
 const Cast = lazy(() => import('./Cast/Cast'));
-// const Reviews = lazy(() => import('./components/Reviews'));
 
 export const App = () => {
   return (

@@ -18,5 +18,3 @@ export const Header = () => {
     </Header1>
   );
 };
-
-

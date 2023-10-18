@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { ReadorHide, Text } from '../ReadMore/ReadMore.styled';
+import { ReadOrHide, Text } from '../ReadMore/ReadMore.styled';
 
 export const ReadMore = ({ children }) => {
   const text = children;
@@ -11,9 +11,9 @@ export const ReadMore = ({ children }) => {
   return (
     <Text>
       {isReadMore ? text.slice(0, 150) : text}
-      <ReadorHide onClick={toggleReadMore}>
+      <ReadOrHide onClick={toggleReadMore}>
         {isReadMore ? '...read more' : ' show less'}
-      </ReadorHide>
+      </ReadOrHide>
     </Text>
   );
 };

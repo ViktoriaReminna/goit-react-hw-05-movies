@@ -5,7 +5,7 @@ export const MainStyles = styled.main`
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
-  background-color: #1e1e1e;
+  background-color: #008080;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 

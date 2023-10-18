@@ -2,9 +2,9 @@ import { AiOutlineLike } from 'react-icons/ai';
 
 import { NavLink, useLocation } from 'react-router-dom';
 
-import { MoviesListStyles } from './MovieList/MovieList.styled';
+import { MoviesListStyles } from '../MovieList/MovieList.styled';
 
-import noPhoto from '../../img/noImage.png';
+import noPhoto from '../../image/noImage.png';
 
 import { Image, InfoWrap, RatingWrap, Title } from './MovieCard.styled';
 
