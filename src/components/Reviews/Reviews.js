@@ -8,7 +8,7 @@ import { FaUserCircle } from 'react-icons/fa';
 
 import { ErrorText, ReviewWrap, UserName } from './Reviews.styled';
 
-import { ReadMore } from 'components/ReadMore/ReadMore';
+import { ReadMore } from '../ReadMore/ReadMore';
 
 export const Reviews = () => {
   const { movieId } = useParams();
@@ -36,7 +36,7 @@ export const Reviews = () => {
           <UserName>
             <FaUserCircle
               style={{
-                fill: '#e50914',
+                fill: '#4169E1',
                 marginRight: '10px',
                 width: '30px',
                 height: '30px',
@@ -52,3 +52,5 @@ export const Reviews = () => {
     <ErrorText>We don't have any reviews for this movie</ErrorText>
   );
 };
+
+export default Reviews;

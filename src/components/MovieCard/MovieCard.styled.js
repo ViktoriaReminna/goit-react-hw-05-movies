@@ -37,5 +37,6 @@ export const InfoWrap = styled.div`
 
 export const Title = styled.h2`
   min-height: 50px;
+  max-width: 280px;
   margin-bottom: 20px;
 `;

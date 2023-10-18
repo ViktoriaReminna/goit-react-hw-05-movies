@@ -15,7 +15,7 @@ import {
   ErrorText,
 } from './Cast.styled.js';
 
-const Cast = () => {
+export const Cast = () => {
   const { movieId } = useParams();
   const [cast, setCast] = useState([]);
 

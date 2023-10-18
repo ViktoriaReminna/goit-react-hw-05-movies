@@ -28,8 +28,6 @@ const MoviesDetails = () => {
   const location = useLocation();
   const [genres, setGenres] = useState([]);
 
- 
-
   useEffect(() => {
     if (!movieId) {
       return;
