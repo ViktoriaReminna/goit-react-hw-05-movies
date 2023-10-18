@@ -92,6 +92,7 @@ export const InfoLink = styled(Link)`
   border: solid 1px #a9a9a9;
   width: 100px;
   display: block;
+  font-size: 22px;
 
   &:hover,
   &:focus {
