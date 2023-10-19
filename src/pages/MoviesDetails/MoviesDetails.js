@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useState } from 'react';
+import { Suspense, useEffect, useRef, useState } from 'react';
 
 import { BsArrowLeft } from 'react-icons/bs';
 
@@ -26,6 +26,7 @@ const MoviesDetails = () => {
   const { movieId } = useParams();
   const [movieInfo, setMovieInfo] = useState(null);
   const location = useLocation();
+  const backLinkLocation = useRef(location.state?.from ?? '/movies');
   const [genres, setGenres] = useState([]);
 
   useEffect(() => {
@@ -54,7 +55,7 @@ const MoviesDetails = () => {
 
   return (
     <MainStyles>
-      <Link to={location.state?.from || '/'}>
+      <Link to={backLinkLocation.current}>
         <BsArrowLeft style={{ marginRight: '10px' }} />
         Go back
       </Link>

@@ -6,14 +6,13 @@ import { Layout } from './Layout/Layout';
 
 import { ToastContainer } from 'react-toastify';
 
-import { Reviews } from './Reviews/Reviews';
+
 
 const Home = lazy(() => import('../pages/Home/Home'));
 const Movies = lazy(() => import('../pages/Movies/Movies'));
-const MoviesDetails = lazy(() =>
-  import('../pages/MoviesDetails/MoviesDetails')
-);
+const MoviesDetails = lazy(() =>  import('../pages/MoviesDetails/MoviesDetails'));
 const Cast = lazy(() => import('./Cast/Cast'));
+const Reviews = lazy(() => import('./Reviews/Reviews'));
 
 const App = () => {
   return (

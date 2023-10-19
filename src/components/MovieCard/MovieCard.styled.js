@@ -26,8 +26,8 @@ export const RatingWrap = styled.div`
 `;
 
 export const Image = styled.img`
-  height: 400px;
-  width: 300px;
+  height: 500px;
+  width: 400px;
   margin-bottom: 15px;
 `;
 
